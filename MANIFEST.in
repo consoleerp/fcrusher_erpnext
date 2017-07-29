@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include fcrusher_erpnext *.css
+recursive-include fcrusher_erpnext *.csv
+recursive-include fcrusher_erpnext *.html
+recursive-include fcrusher_erpnext *.ico
+recursive-include fcrusher_erpnext *.js
+recursive-include fcrusher_erpnext *.json
+recursive-include fcrusher_erpnext *.md
+recursive-include fcrusher_erpnext *.png
+recursive-include fcrusher_erpnext *.py
+recursive-include fcrusher_erpnext *.svg
+recursive-include fcrusher_erpnext *.txt
+recursive-exclude fcrusher_erpnext *.pyc
