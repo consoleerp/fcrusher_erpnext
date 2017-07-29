@@ -120,3 +120,21 @@ app_license = "MIT"
 # 	"frappe.desk.doctype.event.event.get_events": "fcrusher_erpnext.event.get_events"
 # }
 
+fixtures = [
+	{
+		"dt": "Custom Script",
+		"filters": [
+			["name", "in", [
+				"Sales Invoice-Client"
+			]]
+		]
+	},
+	{
+		"dt": "Print Format",
+		"filters": [
+			["name", "in", [
+				"Gate Pass"
+			]]
+		]
+	}
+]

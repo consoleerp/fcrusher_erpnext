@@ -1,0 +1,22 @@
+[
+ {
+  "align_labels_left": 0, 
+  "css": null, 
+  "custom_format": 1, 
+  "disabled": 0, 
+  "doc_type": "Sales Invoice", 
+  "docstatus": 0, 
+  "doctype": "Print Format", 
+  "font": "Default", 
+  "format_data": null, 
+  "html": "<style>\n\t@media screen {\n\t\t.print-format {\n\t\t\twidth: 4.135in;\n\t\t\tpadding: 0.1in;\n\t\t\tmin-height: 2in;\n\t\t}\n\t\t.outline {\n\t\t\tpadding: 0.15in;\n\t\t\theight: 2.4in;\n\t\t\toutline: 1px solid #d1d8dd;\n\t\t}\n\t}\n</style>\n\n<div class=\"outline\">\n\n\t<p class=\"text-center h2\">\n\t\tGate Pass\n\t</p>\n\t<div class=\"row\">\n\t\t<div class=\"col-xs-6 text-left\"><i>No:</i> {{ doc.name }}</div>\n\t\t<div class=\"col-xs-6 text-right\"><i>Date:</i> {{ doc.posting_date }}</div>\n\t</div>\n\n\t<table class=\"table table-bordered\">\n\t\t<tr>\n\t\t\t<td width=\"50%\">Time</td>\n\t\t\t<td width=\"50%\">{{ frappe.utils.format_time(doc.posting_time) }}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td width=\"50%\">Vehicle</td>\n\t\t\t<td width=\"50%\">{{ doc.vehicle_number }}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td width=\"50%\">Material</td>\n\t\t\t<td width=\"50%\">{{ doc.items[0].item_name }}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td width=\"50%\">Qty</td>\n\t\t\t<td width=\"50%\">{{ doc.items[0].qty }}</td>\n\t\t</tr>\n\t</table>\n</div>", 
+  "line_breaks": 0, 
+  "modified": "2017-07-29 12:20:53.789085", 
+  "module": "Accounts", 
+  "name": "Gate Pass", 
+  "print_format_builder": 1, 
+  "print_format_type": "Server", 
+  "show_section_headings": 0, 
+  "standard": "No"
+ }
+]

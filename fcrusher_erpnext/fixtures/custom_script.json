@@ -1,0 +1,11 @@
+[
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Sales Invoice", 
+  "modified": "2017-07-29 13:10:36.518788", 
+  "name": "Sales Invoice-Client", 
+  "script": "frappe.ui.form.on(\"Sales Invoice\", \"validate\", function(frm){\n\tvar row = frm.doc.items[0];\n\tfrm.doc.remarks = (frm.doc.vehicle_number ? \"Vehicle:\" + frm.doc.vehicle_number + \"-\" : \"\")\n\t\t\t\t\t\t+ (row.item_name + \" \" + row.qty + row.uom)\n})", 
+  "script_type": "Client"
+ }
+]
