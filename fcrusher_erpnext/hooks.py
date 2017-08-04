@@ -136,5 +136,13 @@ fixtures = [
 				"Gate Pass"
 			]]
 		]
+	},
+	{
+		"dt": "Custom Field",
+		"filters": [
+			["name", "in", [
+				"Sales Invoice-vehicle_number"
+			]]
+		]
 	}
 ]
